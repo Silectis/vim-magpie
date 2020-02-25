@@ -40,6 +40,8 @@ syn match magpieMultilineComment '\/\*'
 " REGIONS
 syn region magpieDoubleQuotedString start='"' end='"'
 
+syn region magpieDoubleQuotedString start="'" end="'"
+
 let b:current_syntax = "magpie"
 
 hi def link magpieSyntax				Statement
