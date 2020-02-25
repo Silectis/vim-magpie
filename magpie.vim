@@ -40,7 +40,7 @@ syn match magpieMultilineComment '\/\*'
 " REGIONS
 syn region magpieDoubleQuotedString start='"' end='"'
 
-syn region magpieDoubleQuotedString start="'" end="'"
+syn region magpieSingleQuotedString start="'" end="'"
 
 let b:current_syntax = "magpie"
 
@@ -57,5 +57,6 @@ hi def link magpieBuiltInFunctions		Statement
 hi def link magpieDataTypes				Type
 hi def link magpieNumber				Constant
 hi def link magpieDoubleQuotedString	Constant
+hi def link magpieSingleQuotedString	Constant
 hi def link magpieLineComment			Comment
 hi def link magpieMultilineComment		Comment
