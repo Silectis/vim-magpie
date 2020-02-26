@@ -35,12 +35,12 @@ syn match magpieNumber '\b[+-]?\d+(?:(?:\.\d*)?(?:[eE][+-]?\d+)?)?\b'
 
 syn match magpieLineComment "//.*$"
 
-syn match magpieMultilineComment '\/\*'
-
 " REGIONS
 syn region magpieDoubleQuotedString start='"' end='"'
 
 syn region magpieSingleQuotedString start="'" end="'"
+
+syn region magpieMultilineComment start='\/\*' end='\*\/' contains=schemeMultilineComment
 
 let b:current_syntax = "magpie"
 
